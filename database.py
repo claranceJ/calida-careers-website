@@ -13,5 +13,3 @@ with engine.connect() as conn:
   result_dicts = []
   for row in result.all():
     result_dicts.append(dict(row._mapping))
-
-  print(result_dicts)
