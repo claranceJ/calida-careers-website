@@ -33,7 +33,7 @@ def list_jobs():
 
 @app.route("/")
 def hello_world():
-  return render_template("home.html", jobs=JOBS, company_name="Calida LTD")
+  return render_template("home.html", jobs=JOBS, company_name="Calida-LTD")
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
