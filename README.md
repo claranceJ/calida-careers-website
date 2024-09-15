@@ -60,19 +60,6 @@ bash
 
     http://127.0.0.1:5000
 
-🖥️ Folder Structure
-
-php
-
-Calida Career Website/
-├── static/
-│   ├── css/
-│   │   └── styles.css  # CSS styling
-├── templates/
-│   └── home.html  # HTML template for the homepage
-├── app.py  # Flask backend logic
-└── requirements.txt  # Python dependencies
-
 📑 API
 
 This project also exposes a REST API:
@@ -98,81 +85,7 @@ json
   }
 ]
 
-🎨 Frontend Details
 
-HTML (home.html)
-
-html
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/static/css/styles.css">
-    <title>Calida Career Website</title>
-</head>
-<body>
-    <header>
-        <h1>Welcome to {{ company_name }}</h1>
-        <p>Find your dream job today!</p>
-    </header>
-
-    <section class="jobs-list">
-        <h2>Available Jobs:</h2>
-        <ul>
-            {% for job in jobs %}
-            <li>
-                <h3>{{ job.title }}</h3>
-                <p>Location: {{ job.location }}</p>
-                <p>Salary: {{ job.salary }}</p>
-            </li>
-            {% endfor %}
-        </ul>
-    </section>
-</body>
-</html>
-
-CSS (styles.css)
-
-css
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
-    color: #333;
-}
-
-header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
-}
-
-.jobs-list {
-    margin: 20px;
-}
-
-.jobs-list ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.jobs-list li {
-    background: white;
-    margin: 10px 0;
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.jobs-list h3 {
-    margin: 0;
-    font-size: 1.2em;
-}
 
 🤝 Contributing
 
