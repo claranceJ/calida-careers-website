@@ -1,2 +1,2 @@
-# kaicy-careers-website
+# Calida-careers-website
 A careers website for KaicyLTD 
